@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fonoapi by shakee93</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Fonoapi</h1>
+      <h2 class="project-tagline">Mobile Device Description API</h2>
+      <a href="https://github.com/shakee93/fonoapi" class="btn">View on GitHub</a>
+      <a href="https://github.com/shakee93/fonoapi/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/shakee93/fonoapi/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="fonoapi---mobile-device-description-api" class="anchor" href="#fonoapi---mobile-device-description-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FonoApi - Mobile Device Description Api</h1>
+
+<p><a href="https://fonoapi.freshpixl.com/">https://fonoapi.freshpixl.com/</a></p>
+
+<p>this is an Api which can provide mobile device descriptions such as model, brand, cpu, gpu, dimensions, release date etc...</p>
+
+<p>this is the php class to communicate with the api. it would be nice if someone can help with other languages though. ;)</p>
+
+<h3>
+<a id="api" class="anchor" href="#api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Api</h3>
+
+<p>Api Url : <a href="https://fonoapi.freshpixl.com/v1/">https://fonoapi.freshpixl.com/v1/</a></p>
+
+<h6>
+<a id="method--getdevice-httpsfonoapifreshpixlcomv1getdevice" class="anchor" href="#method--getdevice-httpsfonoapifreshpixlcomv1getdevice" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Method : getdevice (<a href="https://fonoapi.freshpixl.com/v1/getdevice">https://fonoapi.freshpixl.com/v1/getdevice</a>)</h6>
+
+<p>available options</p>
+
+<ul>
+<li>brand - 
+   pass the Mobile Device Brand (example : "samsung", "htc")</li>
+<li>device* - 
+   pass nearly relevent mobile device name (example : "i9305", "A8") 
+   this might result multiple results at a time.</li>
+<li>position -
+   when a set of results is returned you can get a specific device by passing the position of your device on the result set. count starts from 0</li>
+<li>token* -
+
+<ul>
+<li>you will need a token to access the Api. no registration, nothing, just grab the key.
+you can get it here <a href="https://fonoapi.freshpixl.com/token/generate">https://fonoapi.freshpixl.com/token/generate</a>
+</li>
+</ul>
+</li>
+</ul>
+
+<h6>
+<a id="php-demo" class="anchor" href="#php-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PHP Demo</h6>
+
+<pre><code>&lt;?php
+    include_once("fonoapi-v1.php");
+    $apiKey = "xxxxxxxx"; // get your token key here - https://fonoapi.freshpixl.com
+    $fonoapi = new fonoApi($apiKey);
+        try {
+            $res = $fonoapi::getDevice("i9305"); // the device you need to get details here
+            foreach ($res as $mobile) {
+                if (!empty($mobile-&gt;DeviceName))    echo "Device : ". $mobile-&gt;DeviceName . "&lt;br&gt;";
+                if (!empty($mobile-&gt;Brand))         echo "Brand : ". $mobile-&gt;Brand . "&lt;br&gt;";
+                if (!empty($mobile-&gt;cpu))           echo "Cpu : " . $mobile-&gt;cpu . "&lt;br&gt;";
+                if (!empty($mobile-&gt;status))        echo "Status : " . $mobile-&gt;status . "&lt;br&gt;";
+                if (!empty($mobile-&gt;dimensions))    echo "Dimensions : " . $mobile-&gt;dimensions . "&lt;br&gt;";
+                if (!empty($mobile-&gt;_4g_bands))     echo "4g : " .$mobile-&gt;_4g_bands . "&lt;br&gt;";
+            }
+        } catch (Exception $e) {
+            echo "ERROR : " . $e-&gt;getMessage();
+        }
+?&gt;
+</code></pre>
+
+<h6>
+<a id="result-array-description" class="anchor" href="#result-array-description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Result Array Description</h6>
+
+<ul>
+<li>DeviceName</li>
+<li>Brand</li>
+<li>technology</li>
+<li>_2g_bands</li>
+<li>gprs</li>
+<li>edge</li>
+<li>announced</li>
+<li>status</li>
+<li>dimensions</li>
+<li>weight</li>
+<li>sim</li>
+<li>type (display type)</li>
+<li>size</li>
+<li>resolution</li>
+<li>card_slot</li>
+<li>phonebook</li>
+<li>call_records</li>
+<li>camera_c (camera availablity)</li>
+<li>alert_types</li>
+<li>loudspeaker_</li>
+<li><em>3_5mm_jack</em></li>
+<li>sound_c (Sound Quality)</li>
+<li>wlan</li>
+<li>bluetooth</li>
+<li>gps</li>
+<li>infrared_port</li>
+<li>radio</li>
+<li>usb</li>
+<li>messaging</li>
+<li>browser</li>
+<li>clock</li>
+<li>alarm</li>
+<li>games</li>
+<li>languages</li>
+<li>java</li>
+<li>features_c (additional features sperated by "-")</li>
+<li>battery_c (battery information)</li>
+<li>stand_by (standby time)</li>
+<li>talk_time (standby time)</li>
+<li>colors (available colors)</li>
+<li>sensors</li>
+<li>cpu</li>
+<li>internal (memory + RAM)</li>
+<li>os</li>
+<li>body_c (body features seperated by "-")</li>
+<li>keyboard</li>
+<li>primary_ (primary camera)</li>
+<li>video</li>
+<li>secondary (secondary camera)</li>
+<li>3g_bands</li>
+<li>speed</li>
+<li>network_c</li>
+<li>chipset</li>
+<li>features  (additional features seperated by "-")</li>
+<li>music_play</li>
+<li>protection</li>
+<li>gpu</li>
+<li>multitouch</li>
+<li>loudspeaker</li>
+<li>audio_quality</li>
+<li>nfc</li>
+<li>camera</li>
+<li>display</li>
+<li>battery_life</li>
+<li>_4g_bands</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/shakee93/fonoapi">Fonoapi</a> is maintained by <a href="https://github.com/shakee93">shakee93</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
