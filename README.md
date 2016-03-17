@@ -25,11 +25,16 @@ available options
 
 ```
 <?php
+
 	include_once("fonoapi-v1.php");
+
 	$apiKey = "xxxxxxxx"; // get your token key here - https://fonoapi.freshpixl.com
-	$fonoapi = new fonoApi($apiKey);
+	$fonoapi = fonoApi::init($apiKey);
+	
 		try {
+
 			$res = $fonoapi::getDevice("i9305"); // the device you need to get details here
+
 			foreach ($res as $mobile) {
 				if (!empty($mobile->DeviceName)) 	echo "Device : ". $mobile->DeviceName . "<br>";
 				if (!empty($mobile->Brand)) 		echo "Brand : ". $mobile->Brand . "<br>";
@@ -38,9 +43,11 @@ available options
 				if (!empty($mobile->dimensions)) 	echo "Dimensions : " . $mobile->dimensions . "<br>";
 				if (!empty($mobile->_4g_bands)) 	echo "4g : " .$mobile->_4g_bands . "<br>";
 			}
+
 		} catch (Exception $e) {
 			echo "ERROR : " . $e->getMessage();
 		}
+
 ?>
 ```
 
@@ -66,7 +73,7 @@ available options
 - camera_c (camera availablity)
 - alert_types
 - loudspeaker_
-- _3_5mm_jack_
+- __3_5mm_jack_
 - sound_c (Sound Quality)
 - wlan
 - bluetooth
@@ -95,7 +102,7 @@ available options
 - primary_ (primary camera)
 - video
 - secondary (secondary camera)
-- 3g_bands
+- _3g_bands
 - speed
 - network_c
 - chipset
