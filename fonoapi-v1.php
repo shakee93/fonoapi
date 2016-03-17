@@ -3,7 +3,7 @@
 /**
  * Class fonoApi v1
  * Author @shakee93
- * Version 1.0.0
+ * Version 1.0.1
  */
 
 class fonoApi
@@ -23,6 +23,23 @@ class fonoApi
 	}
 
 	/**
+	 * Instaniate Self
+	 */
+	public static function init($ApiKey) {
+		$f = new self($ApiKey);
+		return $f;
+	}
+
+	/**
+	 * Turn Debug On
+	 */
+	public static function debug($ApiKey) {
+		$f = new self($ApiKey);
+		$f::$debug = true;
+		return $f;
+	}
+
+	/**
 	 *
 	 * Gets Device Data Object from fonoapi.freshpixl.com
 	 *
@@ -33,6 +50,7 @@ class fonoApi
 	 * @return mixed
 	 * @throws \Exception
 	 */
+
 	public static function getDevice($device, $position = null, $brand = null){
 		$url = self::$_ApiUrl . "getdevice";
 
@@ -49,7 +67,7 @@ class fonoApi
 			$innerException ="";
 
 			if(self::$debug){
-				$innerException = " <strong>innerException</strong> : " . $result->innerException;
+				$innerException = " | <strong>innerException</strong> : " . $result->innerException;
 			}
 
 			throw new Exception($result->message . $innerException);
@@ -67,13 +85,29 @@ class fonoApi
 	 * @return mixed
 	 */
 	static function sendPostData($url, $post){
-	  $ch = curl_init($url);
-	  curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");  
-	  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	  curl_setopt($ch, CURLOPT_POSTFIELDS,$post);
-	  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1); 
-	  $result = curl_exec($ch);
-	  curl_close($ch);
-	  return $result;
+
+		try {
+
+			$ch = curl_init($url);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_POSTFIELDS,$post);
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			$result = curl_exec($ch);
+
+			if (FALSE === $result)
+				throw new Exception(curl_error($ch), curl_errno($ch));
+
+			curl_close($ch);
+			return $result;
+
+		} catch (Exception $e) {
+
+			$result["status"] = $e->getCode();
+			$result["message"] = "Curl Failed" ;
+			$result["innerException"] = $e->getMessage();
+
+			return json_encode($result);	
+		}
 	}
 }
