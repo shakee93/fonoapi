@@ -53,10 +53,12 @@ available options
 
 ###### Result Array Description
 
+**Note** : Use a "_" before key if the key is starting with a number (example : _2g_bands, _4g_bands)
+
 - DeviceName
 - Brand
 - technology
-- _2g_bands
+- 2g_bands
 - gprs
 - edge
 - announced
@@ -73,7 +75,7 @@ available options
 - camera_c (camera availablity)
 - alert_types
 - loudspeaker_
-- __3_5mm_jack_
+- 3_5mm_jack_
 - sound_c (Sound Quality)
 - wlan
 - bluetooth
@@ -102,7 +104,7 @@ available options
 - primary_ (primary camera)
 - video
 - secondary (secondary camera)
-- _3g_bands
+- 3g_bands
 - speed
 - network_c
 - chipset
@@ -117,5 +119,5 @@ available options
 - camera
 - display
 - battery_life
-- _4g_bands
+- 4g_bands
 
