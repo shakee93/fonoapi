@@ -2,6 +2,7 @@
 https://fonoapi.freshpixl.com/
 
 this is an Api which can provide mobile device descriptions such as model, brand, cpu, gpu, dimensions, release date etc...
+it might be helpful if you are building a website lke gsmarena, phonearena or something similar to that. this api contains a database of a mobile device descriptions of android, apple, ios and old phones too.. :D
 
 this is the php class to communicate with the api. it would be nice if someone can help with other languages though. ;)
 
