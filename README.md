@@ -22,6 +22,7 @@ available options
     - you will need a token to access the Api. no registration, nothing, just grab the key.
       you can get it here https://fonoapi.freshpixl.com/token/generate
 
+------
 ###### PHP Demo
 
 ```
@@ -51,6 +52,13 @@ available options
 
 ?>
 ```
+
+------
+
+Thanks @jesusperiago
+Python Library is here : https://github.com/jesusperiago/fonoapi
+
+------
 
 ###### Result Array Description
 
