@@ -1,3 +1,7 @@
+[![GitHub stars](https://img.shields.io/github/stars/shakee93/fonoapi.svg)](https://github.com/shakee93/fonoapi/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/shakee93/fonoapi.svg)](https://github.com/shakee93/fonoapi/issues)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/shakee93/fonoapi/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/shakee93/fonoapi/.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 # FonoApi - Mobile Device Description Api
 https://fonoapi.freshpixl.com/
 
@@ -60,6 +64,13 @@ Python Library is here : https://github.com/jesusperiago/fonoapi
 
 ------
 
+------
+
+jQuery Plugin here : https://github.com/shakee93/fonoapi/tree/master/fonoapi-js
+
+------
+
+https://github.com/shakee93/fonoapi/tree/master/fonoapi-js
 ###### Result Array Description
 
 **Note** : Use a "_" before key if the key is starting with a number (example : _2g_bands, _4g_bands)
