@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fonoApi JS Demo</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		.container {
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<p>Search for your device</p>
+		<div class="form-group">
+	    	<input class="devname form-control" type="text" ></input> 
+	  	</div>
+	  	<div class="form-group">
+	    	<a href="#" class="form-control btn btn-primary submit">Submit</a>
+	  	</div>
+
+		<div class="api">
+			Api is ready to Run
+		</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.2.min.js" ></script>
+<script type="text/javascript" src="fonoapi.jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+$('.submit').on('click', function() {
+
+	// set token globally
+	//$.fn.fonoApi.options.token = "xxx";
+
+	$('.api').fonoApi({
+		token : "xxx",
+		device : $('.devname').val(),
+		limit : 50,
+		template : function() {
+
+			// argument contains the data object // *returns html content
+			return $.map(arguments, function(obj, i) {
+
+				content  = '<h3>'+ obj.DeviceName + '</h3>';
+				content += '<table class="table table-striped" style="width:100%">';
+				content += '<tr><th>info</th><th>Description</th></tr>';
+				
+				for(var key in obj){
+				  content += "<tr><td>" + key + "</td><td>" + obj[key] + "</td><tr>";
+				}
+
+				content += "</table>";
+				return $('<div class="table-responsive"></div>').append(content);
+			});
+
+		}
+	});
+
+});
+
+</script>
+
+</body>
+</html>
+
