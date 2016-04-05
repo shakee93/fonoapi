@@ -70,7 +70,6 @@ jQuery Plugin here : https://github.com/shakee93/fonoapi/tree/master/fonoapi-js
 
 ------
 
-https://github.com/shakee93/fonoapi/tree/master/fonoapi-js
 ###### Result Array Description
 
 **Note** : Use a "_" before key if the key is starting with a number (example : _2g_bands, _4g_bands)
