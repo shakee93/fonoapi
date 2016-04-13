@@ -26,6 +26,17 @@ available options
     - you will need a token to access the Api. no registration, nothing, just grab the key.
       you can get it here https://fonoapi.freshpixl.com/token/generate
 
+###### Method : getlatest (https://fonoapi.freshpixl.com/v1/getlatest)
+available options
+  - brand - 
+       It gives the latest you can filter the brand (example : "samsung", "htc")
+  - limit - 
+       limit the result count (Max 100)
+  - token* -
+    - you will need a token to access the Api. no registration, nothing, just grab the key.
+      you can get it here https://fonoapi.freshpixl.com/token/generate
+
+
 ------
 ###### PHP Demo
 
