@@ -3,7 +3,7 @@
 /**
  * Class fonoApi v1
  * Author @shakee93
- * Version 1.0.1
+ * Version 1.0.2
  */
 
 class fonoApi
@@ -88,11 +88,13 @@ class fonoApi
 
 		try {
 
+			$rUrl = "http".(!empty($_SERVER['HTTPS'])?"s":""). "://" .$_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($ch, CURLOPT_POSTFIELDS,$post);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt($ch, CURLOPT_REFERER, $rUrl);
 			$result = curl_exec($ch);
 
 			if (FALSE === $result)
