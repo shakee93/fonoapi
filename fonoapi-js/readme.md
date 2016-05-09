@@ -14,7 +14,7 @@ Play in Codepen Demo -  [here](http://codepen.io/Shakee93/pen/reYvow)
 ```
 
 // set token globally if you wish
-// $.fn.fonoApi.options.token = "86b89476caaf66eda3f21279b7711afc";
+// $.fn.fonoApi.options.token = "XXX";
 
 $('.api').fonoApi({
 		token : "xxx",
