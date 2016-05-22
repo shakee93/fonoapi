@@ -67,6 +67,11 @@ available options
 
 ?>
 ```
+------
+###### Curl Example
+```bash
+curl https://fonoapi.freshpixl.com/v1/getdevice -XPOST -H 'Accept: application/json' -d 'token=YOUR_TOKEN_HERE&limit=5&device=A8'
+```
 
 ------
 
