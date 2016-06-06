@@ -75,8 +75,6 @@ available options
 curl https://fonoapi.freshpixl.com/v1/getdevice -XPOST -H 'Accept: application/json' -d 'token=YOUR_TOKEN_HERE&limit=5&device=A8'
 ```
 
-------
-
 ###### Python
  Library is here : https://github.com/jesusperiago/fonoapi
 
@@ -89,73 +87,5 @@ curl https://fonoapi.freshpixl.com/v1/getdevice -XPOST -H 'Accept: application/j
 
 ------
 
-###### Result Array Description
-
-**Note** : Use a "_" before key if the key is starting with a number (example : _2g_bands, _4g_bands)
-
-- DeviceName
-- Brand
-- technology
-- 2g_bands
-- gprs
-- edge
-- announced
-- status
-- dimensions
-- weight
-- sim
-- type (display type)
-- size
-- resolution
-- card_slot
-- phonebook
-- call_records
-- camera_c (camera availablity)
-- alert_types
-- loudspeaker_
-- 3_5mm_jack_
-- sound_c (Sound Quality)
-- wlan
-- bluetooth
-- gps
-- infrared_port
-- radio
-- usb
-- messaging
-- browser
-- clock
-- alarm
-- games
-- languages
-- java
-- features_c (additional features sperated by "-")
-- battery_c (battery information)
-- stand_by (standby time)
-- talk_time (standby time)
-- colors (available colors)
-- sensors
-- cpu
-- internal (memory + RAM)
-- os
-- body_c (body features seperated by "-")
-- keyboard
-- primary_ (primary camera)
-- video
-- secondary (secondary camera)
-- 3g_bands
-- speed
-- network_c
-- chipset
-- features  (additional features seperated by "-")
-- music_play
-- protection
-- gpu
-- multitouch
-- loudspeaker
-- audio_quality
-- nfc
-- camera
-- display
-- battery_life
-- 4g_bands
-
+##### Result Set Structure
+Check here : https://github.com/shakee93/fonoapi/blob/master/resultset.md
