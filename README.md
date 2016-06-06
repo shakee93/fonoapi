@@ -68,21 +68,24 @@ available options
 ?>
 ```
 ------
+
 ###### Curl Example
+
 ```bash
 curl https://fonoapi.freshpixl.com/v1/getdevice -XPOST -H 'Accept: application/json' -d 'token=YOUR_TOKEN_HERE&limit=5&device=A8'
 ```
 
 ------
 
-Thanks @jesusperiago
-Python Library is here : https://github.com/jesusperiago/fonoapi
+###### Python
+ Library is here : https://github.com/jesusperiago/fonoapi
 
-------
+###### jQuery
+ Library is here : https://github.com/shakee93/fonoapi/tree/master/fonoapi-js
 
-------
-
-jQuery Plugin here : https://github.com/shakee93/fonoapi/tree/master/fonoapi-js
+###### Nodejs
+ Library is here : https://github.com/mtrung/fonoapi/tree/master/fonoapi-nodejs  
+ Package is here : https://www.npmjs.com/package/fonoapi-nodejs
 
 ------
 
