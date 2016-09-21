@@ -3,7 +3,9 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/shakee93/fonoapi/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/shakee93/fonoapi/.svg?style=social)](https://twitter.com/intent/tweet?text=fonoApi - Mobile Device Description Api (https://github.com/shakee93/fonoapi/) so cool check it out)
 # FonoApi - Mobile Device Description Api
+#### Database Last Updated : 21st September 2016
 https://fonoapi.freshpixl.com/
+
 
 this is an Api which can provide mobile device descriptions such as model, brand, cpu, gpu, dimensions, release date etc...
 it might be helpful if you are building a website lke gsmarena, phonearena or something similar to that. this api contains a database of a mobile device descriptions of android, apple, ios and old phones too.. :D
