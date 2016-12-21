@@ -5,8 +5,8 @@
 # FonoApi - Mobile Device Description Api
 #### Logs : 21st September 2016
 * Database Updated : 21st September 2016
-* Database Updated (New Devices Added) : 27th December 2016
-* Database Updated (Old Device Data Updated) : 27th December 2016
+* Database Updated (New Devices Added) : 27th November 2016
+* Database Updated (Old Device Data Updated) : 27th November 2016
 
 
 https://fonoapi.freshpixl.com/
