@@ -9,6 +9,8 @@
 * Database Updated (Old Device Data Updated) : 27th November 2016
 * Database Updated (New Devices Added) : 4th January 2017
 * Database Updated (Old Device Data Updated) : 4th January 2017
+* Database Updated (New Devices Added) : 6th February 2017
+* Database Updated (Old Device Data Updated) : 6th February 2017
 
 
 https://fonoapi.freshpixl.com/
