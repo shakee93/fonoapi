@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/shakee93/fonoapi/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/shakee93/fonoapi/.svg?style=social)](https://twitter.com/intent/tweet?text=fonoApi - Mobile Device Description Api (https://github.com/shakee93/fonoapi/) so cool check it out)
 # FonoApi - Mobile Device Description Api
-#### Logs : 21st September 2016
+
 * Database Updated : 21st September 2016
 * Database Updated (New Devices Added) : 27th November 2016
 * Database Updated (Old Device Data Updated) : 27th November 2016
@@ -11,7 +11,8 @@
 * Database Updated (Old Device Data Updated) : 4th January 2017
 * Database Updated (New Devices Added) : 6th February 2017
 * Database Updated (Old Device Data Updated) : 6th February 2017
-
+* Database Updated (New Devices Added) : 3rd March 2017
+* Database Updated (Old Device Data Updated) : 3rd March 2017
 
 https://fonoapi.freshpixl.com/
 
