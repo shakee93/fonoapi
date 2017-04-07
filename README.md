@@ -19,36 +19,35 @@
 https://fonoapi.freshpixl.com/
 
 
-this is an Api which can provide mobile device descriptions such as model, brand, cpu, gpu, dimensions, release date etc...
-it might be helpful if you are building a website lke gsmarena, phonearena or something similar to that. this api contains a database of a mobile device descriptions of android, apple, ios and old phones too.. :D
+This is an API which can provide mobile device descriptions such as model, brand, CPU, GPU, dimensions, release date etc. It might be helpful if you are building a website like GSMAera, Phonearena or something similar. This API contains a database of a mobile device descriptions of Android, iOS and some old phones too.. :D
 
-this is the php class to communicate with the api. it would be nice if someone can help with other languages though. ;)
+This is the PHP class to communicate with the API. It would be nice if someone can help with other languages though. ;)
 
-### Api
-Api Url : https://fonoapi.freshpixl.com/v1/
+### API
+API URL : https://fonoapi.freshpixl.com/v1/
 
 ###### Method : getdevice (https://fonoapi.freshpixl.com/v1/getdevice)
-available options
+Available options
   - brand - 
-       pass the Mobile Device Brand (example : "samsung", "htc")
+       Pass the Mobile Device Brand (example : "Samsung", "HTC")
   - device* - 
-       pass nearly relevent mobile device name (example : "i9305", "A8") 
-       this might result multiple results at a time.
+       Pass nearly relevent mobile device name (example : "i9305", "A8") 
+       This might result multiple results at a time.
   - position -
-       when a set of results is returned you can get a specific device by passing the position of your device on the result set. count starts from 0
+       When a set of results is returned you can get a specific device by passing the position of your device on the result set. Count starts from 0.
   - token* -
-    - you will need a token to access the Api. no registration, nothing, just grab the key.
-      you can get it here https://fonoapi.freshpixl.com/token/generate
+    - You will need a token to access the API. No registration, nothing, just grab the key.
+      You can acquire key from here: https://fonoapi.freshpixl.com/token/generate
 
 ###### Method : getlatest (https://fonoapi.freshpixl.com/v1/getlatest)
-available options
+Available options
   - brand - 
-       It gives the latest you can filter the brand (example : "samsung", "htc")
+       It gives the latest devices announced by OEMs. You can filter by the brand (Example : "Samsung", "HTC").
   - limit - 
-       limit the result count (Max 100)
+       Limit the result count (Max 100)
   - token* -
-    - you will need a token to access the Api. no registration, nothing, just grab the key.
-      you can get it here https://fonoapi.freshpixl.com/token/generate
+    - You will need a token to access the API. No registration, nothing, just grab the key.
+      You can acquire key from here: https://fonoapi.freshpixl.com/token/generate
 
 
 ------
