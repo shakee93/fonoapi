@@ -18,7 +18,8 @@
 * Database Updated : 8th May 2017
 * Database Updated : 10th July 2017
 * Database Updated : 10th August 2017
-* <strong>Database Updated : 15th September 2017</strong>
+* Database Updated : 15th September 2017
+* <strong>Database Updated : 15th October 2017</strong>
 
 https://fonoapi.freshpixl.com/
 
@@ -54,6 +55,7 @@ available options
     - you will need a token to access the Api. no registration, nothing, just grab the key.
       you can get it here https://fonoapi.freshpixl.com/token/generate
 
+<strong>NOTE :</strong> the Api will return only 100 devices per request
 
 ------
 ###### PHP Demo
