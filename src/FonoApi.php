@@ -1,12 +1,13 @@
 <?php
 
+namespace Shakee93\Fonoapi;
+
 /**
  * Class fonoApi v1
  * Author @shakee93
  * Version 1.0.3
  */
-
-class fonoApi
+class FonoApi
 {
 	static $_ApiKey = null;
 	static $debug = false;
@@ -114,7 +115,7 @@ class fonoApi
 			$result["message"] = "Curl Failed" ;
 			$result["innerException"] = $e->getMessage();
 
-			return json_encode($result);	
+			return json_encode($result);
 		}
 	}
 }
