@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Shakee93\\Fonoapi\\": "src"
+            "Shakee93\\FonoApi\\": "src"
         }
     }
 }

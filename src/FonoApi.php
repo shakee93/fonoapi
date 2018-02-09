@@ -1,6 +1,6 @@
 <?php
 
-namespace Shakee93\Fonoapi;
+namespace Shakee93\FonoApi;
 
 /**
  * Class fonoApi v1

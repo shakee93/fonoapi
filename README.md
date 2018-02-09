@@ -63,13 +63,21 @@ available options
 ------
 ###### PHP Demo
 
+Install the package in your PHP project:
+
+```bash
+$ composer require shakee93/fonoapi
+```
+
 ```
 <?php
 
-	include_once("fonoapi-v1.php");
+    use Shakee93\Fonoapi\FonoApi;
+
+	require __DIR__.'/vendor/autoload.php';
 
 	$apiKey = "xxxxxxxx"; // get your token key here - https://fonoapi.freshpixl.com
-	$fonoapi = fonoApi::init($apiKey);
+	$fonoapi = FonoApi::init($apiKey);
 	
 		try {
 
