@@ -109,6 +109,9 @@ curl https://fonoapi.freshpixl.com/v1/getdevice -XPOST -H 'Accept: application/j
  Library is here : https://github.com/mtrung/fonoapi/tree/master/fonoapi-nodejs  
  Package is here : https://www.npmjs.com/package/fonoapi-nodejs
 
+###### Java
+ Library is here : https://github.com/aafanasev/fonoapi-client
+
 ------
 
 ##### Result Set Structure
