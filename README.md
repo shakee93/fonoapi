@@ -39,7 +39,7 @@ Api Url : https://fonoapi.freshpixl.com/v1/
 
 ###### Method : getdevice (https://fonoapi.freshpixl.com/v1/getdevice)
 
-HTTP method: `POST`
+HTTP method: `GET|POST`
 
 available options
   - brand - 
@@ -55,7 +55,7 @@ available options
 
 ###### Method : getlatest (https://fonoapi.freshpixl.com/v1/getlatest)
 
-HTTP Method: `POST`
+HTTP Method: `GET|POST`
 
 available options
   - brand - 
