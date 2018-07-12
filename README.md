@@ -38,6 +38,9 @@ this is the php class to communicate with the api. it would be nice if someone c
 Api Url : https://fonoapi.freshpixl.com/v1/
 
 ###### Method : getdevice (https://fonoapi.freshpixl.com/v1/getdevice)
+
+HTTP method: `POST`
+
 available options
   - brand - 
        pass the Mobile Device Brand (example : "samsung", "htc")
@@ -51,6 +54,9 @@ available options
       you can get it here https://fonoapi.freshpixl.com/token/generate
 
 ###### Method : getlatest (https://fonoapi.freshpixl.com/v1/getlatest)
+
+HTTP Method: `POST`
+
 available options
   - brand - 
        It gives the latest you can filter the brand (example : "samsung", "htc")
