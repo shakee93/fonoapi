@@ -101,7 +101,7 @@ curl https://fonoapi.freshpixl.com/v1/getdevice -X POST -H 'Accept: application/
 ```
 
 ###### Postman Collection
- Library is here : FonoAPI.postman_collection
+ Library is here : [FonoAPI.postman_collection](FonoAPI.postman_collection)
 
 ###### Python
  Library is here : https://github.com/jesusperiago/fonoapi
