@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "252575fd-0b6b-407b-95b7-d28446b0efc5",
+		"name": "FonoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Device",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "YOUR TOKEN HERE",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "device",
+							"value": "A8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://fonoapi.freshpixl.com/v1/getdevice",
+					"protocol": "https",
+					"host": [
+						"fonoapi",
+						"freshpixl",
+						"com"
+					],
+					"path": [
+						"v1",
+						"getdevice"
+					]
+				},
+				"description": "Gets information from a device "
+			},
+			"response": []
+		}
+	]
+}
