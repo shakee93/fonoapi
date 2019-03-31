@@ -52,6 +52,8 @@ available options
     - you will need a token to access the Api. no registration, nothing, just grab the key.
       you can get it here https://fonoapi.freshpixl.com/token/generate
 
+For example: https://fonoapi.freshpixl.com/v1/getdevice?token=[YOUR_TOKEN_HERE]&device=samsung_galaxy_s9 returns Samsung Galaxy S9.
+
 ###### Method : getlatest (https://fonoapi.freshpixl.com/v1/getlatest)
 available options
   - brand - 
