@@ -107,6 +107,9 @@ curl https://fonoapi.freshpixl.com/v1/getdevice -XPOST -H 'Accept: application/j
 
 ###### jQuery
  Library is here : https://github.com/shakee93/fonoapi/tree/master/fonoapi-js
+ 
+###### Javascript WEB apis (no JQuery)
+ Library is here: https://github.com/luckv/fonoapi-client-noJquery
 
 ###### Nodejs
  Library is here : https://github.com/mtrung/fonoapi/tree/master/fonoapi-nodejs  
