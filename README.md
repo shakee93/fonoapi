@@ -118,8 +118,8 @@ curl https://fonoapi.freshpixl.com/v1/getdevice -XPOST -H 'Accept: application/j
 ###### Java
  Library is here : https://github.com/aafanasev/fonoapi-client
 
-###### Website wrapper
- https://luckv.github.io/fonoapi_explorer
+###### Website wrapper around API
+ https://luckv.github.io/fonoapi-explorer
 ------
 
 ##### Result Set Structure
