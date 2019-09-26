@@ -1,0 +1,15 @@
+{
+    "name": "shakee93/fonoapi",
+    "description": "FonoApi - Mobile Device Description API",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "homepage": "https://fonoapi.freshpixl.com",
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shakee93\\FonoApi\\": "src"
+        }
+    }
+}
