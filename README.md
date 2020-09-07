@@ -2,6 +2,10 @@
 [![GitHub issues](https://img.shields.io/github/issues/shakee93/fonoapi.svg)](https://github.com/shakee93/fonoapi/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/shakee93/fonoapi/master/LICENSE)
 
+# API IS DOWN DUE TO HEAVY LOAD ON THE SERVER
+## sorry for the inconvienience, it will be back up soon !
+## Thanks.
+
 # FonoApi - Mobile Device Description Api
 
 * Database Updated : 21st September 2016
