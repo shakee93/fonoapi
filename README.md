@@ -108,8 +108,11 @@ try {
 ###### Curl Example
 
 ```bash
-curl https://fonoapi.freshpixl.com/v1/getdevice -XPOST -H 'Accept: application/json' -d 'token=YOUR_TOKEN_HERE&limit=5&device=A8'
+curl https://fonoapi.freshpixl.com/v1/getdevice -X POST -H 'Accept: application/json' -d 'token=YOUR_TOKEN_HERE&limit=5&device=A8'
 ```
+
+###### Postman Collection
+ Library is here : [FonoAPI.postman_collection](FonoAPI.postman_collection)
 
 ###### Python
 
