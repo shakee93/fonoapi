@@ -3,16 +3,18 @@
 
 # TechSpecs API
 
-TechSpecs API provides the easiest way to get instant access to the official technical specifications of any consumer electronics product including smartphones, tablets, smartwatches. Our database is the largest and most up-to-date in the world so you can be sure you're always getting the latest information. 
+TechSpecs API provides the easiest way to get instant access to the official technical specifications of any consumer electronics product including **smartphones, tablets, smartwatches**. 
 
-## API Live Demo
+Our database is the largest and most up-to-date in the world so you can be sure you're always getting the latest information. 
+
+## API Demo
 Visit https://techspecs.readme.io to try the endpoints. 
 
 ![alt text](https://i.imgur.com/VJLZSE3.png)
 
 ## Available Data Points
-* Specifications: Dimension, Weight, Display, Camera, Battery, CPU, GPU, and more…
-* Images: Front view, Back view
+* Specifications: **Dimension, Weight, Display, Camera, Battery, CPU, GPU, and more…**
+* Images: **Front view, Back view**
 * Prices: Available Soon
 
 ## Available endpoints
@@ -28,7 +30,7 @@ Visit https://techspecs.readme.io to read the documentation.
 Visit https://developer.dashboard.techspecs.io/signup to signup and get your API key. Registration is free, no credit card required.
 
 
-## Search Engine Live Demo
+## Search Engine Demo
 Visit https://techspecs.io to try the frontend search engine
 
 ![alt text](https://i.ibb.co/Sx0gk2V/1-011-Homepage-Typing-Selected-2x.png)
