@@ -3,7 +3,10 @@
 
 # TechSpecs API
 
-TechSpecs API provides the easiest way to get instant access to the official technical specifications of any consumer electronics product including **smartphones, tablets, smartwatches**. 
+TechSpecs API provides the easiest way to get instant access to the official technical specifications of any consumer electronics product including;
+* **smartphones
+* **tablets
+* **smartwatches**
 
 Our database is the largest and most up-to-date in the world so you can be sure you're always getting the latest information. 
 
