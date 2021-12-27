@@ -13,7 +13,7 @@ Visit https://techspecs.readme.io to try the endpoints.
 ![alt text](https://i.imgur.com/VJLZSE3.png)
 
 ## Available Data Points
-* Specifications: **Dimension, Weight, Display, Camera, Battery, CPU, GPU, and more…**
+* Specifications: **Dimension, Weight, Display, Camera, Battery, CPU, GPU, and over 200 more…**
 * Images: **Front view, Back view**
 * Prices: Available Soon
 
